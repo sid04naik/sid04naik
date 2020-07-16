@@ -1,10 +1,8 @@
-### Hi there 👋
+### Hi, I am Siddhant Naik 👋
+
+I’m the elder son to my parents, born and brought up in Goa. I am a reliable and detailed-oriented individual with Master of Science in Software Technology and currently filling in as a Software Engineer at a reputed agency in Goa where I got exposure to complete software life cycle starting from requirement gathering till delivery with minimal time and team size, without compromising quality through agile as well as scrum methodologies. Apart from this, I am a freelance web developer and also love to travel to different places.
 
 <!--
-**sid04naik/sid04naik** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
-
-Here are some ideas to get you started:
-
 - 🔭 I’m currently working on ...
 - 🌱 I’m currently learning ...
 - 👯 I’m looking to collaborate on ...
