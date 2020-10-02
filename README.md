@@ -1,6 +1,6 @@
 ### Hi, I am Siddhant Naik 👋
 
-I’m the elder son to my parents, born and brought up in Goa. I am a reliable and detailed-oriented individual with Master of Science in Software Technology and currently filling in as a Software Engineer at a reputed agency in Goa where I got exposure to complete software life cycle starting from requirement gathering till delivery with minimal time and team size, without compromising quality through agile as well as scrum methodologies. Apart from this, I am a freelance web developer and also love to travel to different places.
+I am a reliable and detailed-oriented individual, born and brought up in Goa with Master of Science in Software Technology and currently filling in as a Software Engineer at a reputed agency in Goa where I got exposure to complete software life cycle starting from requirement gathering till delivery with minimal time and team size, without compromising quality through agile as well as scrum methodologies. Apart from this, I am a freelance web developer and also love to travel to different places.
 
 <!--
 - 🔭 I’m currently working on ...
