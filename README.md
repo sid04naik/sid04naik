@@ -13,4 +13,4 @@ As a reliable and detail-oriented individual with 8 years of experience in web t
 - 📫 How to reach me: contactsiddhantnaik@gmail.com
 - Resume: https://rxresu.me/contactsiddhantnaik/resume
 
-- ![visitors](https://visitor-badge.glitch.me/badge?page_id=sid04naik&left_color=green&right_color=red)
+- ![visitors](https://visitor-badge.glitch.me/badge?page_id=sid04naik.sid04naik&left_color=green&right_color=red)
