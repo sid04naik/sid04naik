@@ -11,3 +11,4 @@ As a reliable and detail-oriented individual with 8 years of experience in web t
 - Redis, AWS SQS, RabbitMQ
 - 🌱 I’m currently exploring Kafka, Sonarqube, gRPC 
 - 📫 How to reach me: contactsiddhantnaik@gmail.com
+- Resume: https://rxresu.me/contactsiddhantnaik/resume
