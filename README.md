@@ -121,10 +121,6 @@ I'm always interested in connecting with fellow engineers, discussing technology
 **📍 Location**: Bengaluru, India
 **⏰ Availability**: 15-day notice
 
-### **💼 LinkedIn Profile**
-
-<div class="badge-base LI-profile-badge" data-locale="en_US" data-size="large" data-theme="dark" data-type="HORIZONTAL" data-vanity="sid04naik" data-version="v1"><a class="badge-base__link LI-simple-link" href="https://in.linkedin.com/in/sid04naik?trk=profile-badge">Siddhant Naik</a></div>
-
 ---
 
 ## 🎯 What I'm Looking For
