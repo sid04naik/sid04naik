@@ -1,6 +1,6 @@
 # 👨‍💻 Siddhant Naik
 
-> **Lead Engineer & Aspiring Backend Architect**
+> **Staff Engineer & Aspiring Backend Architect**
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-sid04naik-blue?style=flat&logo=linkedin)](https://linkedin.com/in/sid04naik)
 [![GitHub](https://img.shields.io/badge/GitHub-sid04naik-black?style=flat&logo=github)](https://github.com/sid04naik)
@@ -14,7 +14,7 @@
 
 **Backend Engineering Specialist** with extensive experience in building scalable systems, cloud-native applications, and distributed services. Expertise in Go, Node.js, AWS, Docker, and microservices architecture. **Strong focus on system design, cloud infrastructure, and solving complex technical problems.** Passionate about platform reliability, system design, and mentoring engineering teams.
 
-**Current Focus**: Exploring Staff Engineer and Backend Architect roles with emphasis on technical leadership, system architecture, and complex problem solving.
+**Current Focus**: Exploring Senior Staff Engineer and Backend Architect roles with emphasis on technical leadership, system architecture, and complex problem solving.
 
 ---
 
@@ -47,7 +47,7 @@
 ## 📈 Career Journey
 
 ### **Current Role**
-- **Lead Engineer** at Albert Invent (2024 - Present)
+- **Staff Engineer** at Albert Invent (2024 - Present)
 - **Backend Engineering Specialist** with focus on scalable systems
 - **Platform Reliability** and infrastructure optimization
 - **Technical Leadership** and team mentoring
@@ -63,7 +63,7 @@
 
 ### **Career Focus**
 Currently exploring opportunities in:
-- **Staff Engineer** roles
+- **Senior Staff Engineer** roles
 - **Backend Architect** positions
 - **Technical Leadership** opportunities
 
