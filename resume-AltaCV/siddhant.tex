@@ -1,0 +1,301 @@
+%% Use the "normalphoto" option if you want a normal photo instead of cropped to a circle
+% \documentclass[10pt,a4paper,normalphoto]{altacv}
+%% AltaCV uses the fontawesome5 and simpleicons packages.
+%% See http://texdoc.net/pkg/fontawesome5 and http://texdoc.net/pkg/simpleicons for full list of symbols.
+
+
+\documentclass[10pt,a4paper,ragged2e,withhyper]{altacv}
+% Change the page layout if you need to
+\geometry{left=1.25cm,right=1.25cm,top=1.5cm,bottom=1.5cm,columnsep=1.2cm}
+
+% The paracol package lets you typeset columns of text in parallel
+\usepackage{paracol}
+
+% Change the font if you want to, depending on whether
+% you're using pdflatex or xelatex/lualatex
+% WHEN COMPILING WITH XELATEX PLEASE USE
+% xelatex -shell-escape -output-driver="xdvipdfmx -z 0" mmayer.tex
+\iftutex
+  % If using xelatex or lualatex:
+  \setmainfont{Lato}
+\else
+  % If using pdflatex:
+  \usepackage[default]{lato}
+\fi
+
+% Change the colours if you want to
+\definecolor{VividPurple}{HTML}{3E0097}
+\definecolor{SlateGrey}{HTML}{2E2E2E}
+\definecolor{LightGrey}{HTML}{666666}
+% \colorlet{name}{black}
+% \colorlet{tagline}{PastelRed}
+\colorlet{heading}{VividPurple}
+\colorlet{headingrule}{VividPurple}
+% \colorlet{subheading}{PastelRed}
+\colorlet{accent}{VividPurple}
+\colorlet{emphasis}{SlateGrey}
+\colorlet{body}{LightGrey}
+
+% Change some fonts, if necessary
+% \renewcommand{\namefont}{\Huge\rmfamily\bfseries}
+% \renewcommand{\personalinfofont}{\footnotesize}
+% \renewcommand{\cvsectionfont}{\LARGE\rmfamily\bfseries}
+% \renewcommand{\cvsubsectionfont}{\large\bfseries}
+
+% Change the bullets for itemize and rating marker
+% for \cvskill if you want to
+\renewcommand{\cvItemMarker}{{\small\textbullet}}
+\renewcommand{\cvRatingMarker}{\faCircle}
+% ...and the markers for the date/location for \cvevent
+% \renewcommand{\cvDateMarker}{\faCalendar*[regular]}
+% \renewcommand{\cvLocationMarker}{\faMapMarker*}
+
+\begin{document}
+\name{Siddhant Naik}
+\tagline{Staff Software Engineer \& Backend Architect}
+% Cropped to square from https://en.wikipedia.org/wiki/Marissa_Mayer#/media/File:Marissa_Mayer_May_2014_(cropped).jpg, CC-BY 2.0
+%% You can add multiple photos on the left or right
+\photoR{2.5cm}{OFFICE-PROFILE}
+% \photoL{2cm}{Yacht_High,Suitcase_High}
+\personalinfo{%
+  % Not all of these are required!
+  % You can add your own with \printinfo{symbol}{Testing}
+  \email{contactsiddhantnaik@gmail.com}
+  \phone{8830907549}
+  \location{Bengaluru, India}
+  % \homepage{marissamayr.tumblr.com}
+  \linkedin{sid04naik}
+  \github{sid04naik}
+  % \stackoverflow{stackoverflow.com/users/4995949/siddhant}
+  % \orcid{0000-0000-0000-0000} % Obviously making this up too.
+  % \xtwitter{@marissamayer}
+  %% You can add your own arbitrary detail with
+  % \printinfo{}{stackoverflow}[stackoverflow.com/users/4995949/siddhant]
+  % \printinfo{\faPaw}{Hey ho!}
+  %% Or you can declare your own field with
+  %% \NewInfoFiled{fieldname}{symbol}[optional hyperlink prefix] and use it:
+  % \NewInfoField{gitlab}{\faGitlab}[https://gitlab.com/]
+  % \gitlab{your_id}
+	%%
+  %% For services and platforms like Mastodon where there isn't a
+  %% straightforward relation between the user ID/nickname and the hyperlink,
+  %% you can use \printinfo directly e.g.
+  % \printinfo{\faMastodon}{@username@instace}[https://instance.url/@username]
+  %% But if you absolutely want to create new dedicated info fields for
+  %% such platforms, then use \NewInfoField* with a star:
+  % \NewInfoField*{mastodon}{\faMastodon}
+  %% then you can use \mastodon, with TWO arguments where the 2nd argument is
+  %% the full hyperlink.
+  % \mastodon{@username@instance}{https://instance.url/@username}
+}
+
+\makecvheader
+
+\cvsection{Profile}
+\textbf{Backend Engineering Specialist}, Leadership-oriented technologist with 10+ years of experience in backend engineering, specializing in Go, Node.js, cloud platforms, Docker, NoSQL, caching, and queues. Passionate about building scalable systems, driving platform reliability, and mentoring high-performing teams. Available with a 15-day notice.
+
+%% Depending on your tastes, you may want to make fonts of itemize environments slightly smaller
+\AtBeginEnvironment{itemize}{\small}
+
+%% Set the left/right column width ratio to 6:4.
+\columnratio{0.6}
+
+% Start a 2-column paracol. Both the left and right columns will automatically
+% break across pages if things get too long.
+\begin{paracol}{2}
+
+\cvsection{Experience}
+
+\cvevent{Staff Engineer}{Albert Invent}{May 2024 -- Present}{Bengaluru, IN}
+\begin{itemize}
+\item Designed multi-language support for customer data, enabling dynamic variations across regions and boosting global adoption by 40\%.
+\item Implemented a scheduler with RRule and AWS EventBridge, reducing manual intervention by 70\%.
+\item Built an async worker API, increasing throughput 5x, cutting processing from hours to minutes, and eliminating frontend freezes.
+\item Delivered a Digital Signature and Approval system with versioning, ensuring 100\% audit compliance and reducing turnaround by 25\%.
+\item Built a real-time notification system, improving user engagement.
+\item \textbf{Tech Stack:} Nodejs, AWS, Microservices, REST API, DynamoDB, EventBridge, SQS, Lambda, Docker, K6
+\end{itemize}
+
+\divider
+
+\cvevent{Senior Engineer}{Yellow.ai}{Oct 2022 -- Apr 2024}{Bengaluru, IN}
+\begin{itemize}
+\item Designed and launched an in-house URL Shortener Service, replacing third-party tools and enabling integrated analytics; drove 1M+ links/month and boosted upsell conversion by 40\%.
+\item Built a high-throughput OTP SMS service, reducing bot response latency by 10\% and cutting external SMS costs.
+\item Contributed to scalable, low-latency microservices with Go, Redis, RabbitMQ, and ElasticSearch.
+\item \textbf{Tech Stack:} Nodejs, Go, Redis, ElasticSearch, RabbitMQ, Microservices, REST API
+\end{itemize}
+
+\divider
+
+\cvevent{Software Engineer Specialist}{Kaleyra}{Dec 2020 -- Oct 2022}{Bengaluru, IN}
+\begin{itemize}
+\item Scaled SMS throughput from 1K to 5K TPS by migrating monolith to microservices and optimizing with Go.
+\item Implemented DB sharding for horizontal scaling and latency reduction across distributed workloads.
+\item Developed personalized SMS flows using AWS Serverless stack (Lambda, SQS, SNS, etc.), increasing customer engagement via custom payloads.
+\item \textbf{Tech Stack:} Go, Nodejs, Redis, MongoDB, RabbitMQ, Microservices, REST API, New Relic, Graylog, Docker, Kubernetes, AWS
+\end{itemize}
+
+\newpage
+
+\cvevent{Senior Software Engineer}{Sapnagroup}{June 2016 -- Dec 2020}{Panjim, IN}
+
+\divider
+
+\cvevent{Software Engineer}{OPSPL}{June 2015 -- June 2016}{Verna, IN}
+
+\divider
+
+\cvevent{Software Engineer - Intern }{Townhub Innovative solutions Pvt. Ltd}{Jan 2015 -- June 2015}{Mangalore, IN}
+
+
+\cvsection{Publications}
+\cvachievement{\faNewspaper}{IJRCCE}{Protein Structure and Function Prediction Using Machine Learning Methods}
+
+
+% \cvsection{Most Proud of}
+
+% \cvachievement{\faTrophy}{Courage I had}{to take a sinking ship and try to make it float}
+
+% \divider
+
+% \cvachievement{\faHeartbeat}{Persistence \& Loyalty}{I showed despite the hard moments and my willingness to stay with Yahoo after the acquisition}
+
+% \divider
+
+% \cvachievement{\faChartLine}{Google's Growth}{from a hundred thousand searches per day to over a billion}
+
+% \divider
+
+% \cvachievement{\faFemale}{Inspiring women in tech}{Youngest CEO on Fortune's list of 50 most powerful women}
+
+
+
+% \cvsection{A Day of My Life}
+% \hspace*{-5em}
+% \wheelchart{1.5cm}{0.5cm}{%
+% 10/11em/accent!30/Morning routine and exercise,
+% 5/13em/accent!40/Breakfast with family,
+% 15/10em/accent!50/Email review and planning,
+% 20/8em/accent!70/Team meetings and collaboration,
+% 20/8em/accent!90/Strategic planning and issue resolution,
+% 10/8em/accent!60/Evening tea and reflection,
+% 10/10em/accent!40/Pet walk and wind-down,
+% 10/13em/accent!30/Family time and rest
+% }
+
+% use ONLY \newpage if you want to force a page break for
+% ONLY the currentc column
+% \newpage
+
+%% Switch to the right column. This will now automatically move to the second
+%% page if the content is too long.
+\switchcolumn
+
+\cvsection{Skills}
+\cvtag{Go}
+\cvtag{JavaScript}
+\cvtag{Nodejs}
+\cvtag{Firestore}
+\cvtag{MongoDB}
+\cvtag{Postgres}
+\cvtag{DynamoDB}
+\cvtag{MySQL}
+\cvtag{Redis}
+\cvtag{AWS}
+\cvtag{Git}
+\cvtag{SVN}
+\cvtag{RabbitMQ}
+\cvtag{NewRelic}
+\cvtag{Graylog}
+\cvtag{Kubernetes}
+\cvtag{Docker}
+\cvtag{Unix}
+\cvtag{K6}
+\cvtag{CI/CD}
+\cvtag{Serverless}
+
+\cvsection{Certification}
+
+\cvachievement
+{\faCode} % Go icon approximation (custom symbol or text fallback since no official FontAwesome icon for Go)
+{\textbf{\href{http://tinyurl.com/go-certificate}{Go Developer's Guide}}}{Udemy}
+{Built scalable back-end services in Go using Goroutines, Channels, Interfaces, and REST APIs.}
+
+\divider
+
+\cvachievement
+{\faCloud} % Use a custom icon or fallback to \faCloud if \faAws is not available
+{\textbf{\href{http://tinyurl.com/aws-serverless-certificate}{AWS Serverless APIs and APPs}}}{Udemy}
+{Developed serverless apps using AWS Lambda, API Gateway, and DynamoDB with automated deployment workflows.}
+
+\divider
+
+\cvachievement
+{\faNodeJs} % If not available, fallback to \faCode or \faJs
+{\textbf{\href{http://tinyurl.com/nodejs-mongo-certificate}{Node.js, Express MongoDB}}}{Udemy}
+{Developed REST APIs using Node.js, Express, and MongoDB with auth and production setup.}
+
+\divider
+
+\cvachievement
+{\faLock} % Security-oriented icon for incident response
+{\textbf{\href{http://tinyurl.com/incident-responder-certificate}{Certified Incident Responder}}}{PagerDuty}
+{Learned incident handling, threat detection, and breach mitigation techniques.}
+
+\cvsection{Education}
+
+\cvevent{MSc.\ Software Technology (ST)}{AIMIT}{2013 -- 2015}{Mangalore University, KA}
+
+\divider
+
+\cvevent{Bachelor of Computer Application}{AIMIT}{2013 -- 2015}{Goa University, GA}
+
+\newpage
+
+\cvsection{Languages}
+
+\cvskill{English}{5}
+\cvskill{Hindi}{4}
+\cvskill{Konkani}{5}
+\cvskill{Marathi}{3}
+
+
+% \cvsection{Strengths}
+
+% % Don't overuse these \cvtag boxes — they're just eye-candies and not essential. If something doesn't fit on a single line, it probably works better as part of an itemized list (probably inlined itemized list), or just as a comma-separated list of strengths.
+
+% % The `ragged2e` document class option might cause automatic linebreaks between \cvtag to fail.
+% % Either remove the ragged2e option; or
+% % add \LaTeXraggedright in the paragraph for these \cvtag
+% {\LaTeXraggedright
+% \cvtag{Hard-working}
+% \cvtag{Hard-working}
+% \cvtag{Eye for detail}
+% \cvtag{Motivator \& Leader}
+% \par}
+
+% \divider\smallskip
+
+% \cvtag{UX}
+% \cvtag{Mobile Devices \& Applications}
+% \cvtag{Product Management \& Marketing}
+
+
+
+
+
+
+\cvsection{Referees}
+
+% \cvref{name}{email}{mailing address}
+\cvref{Mr.\ Aditya Nalla}{Albert Invent}{aditya.nalla@albertinvent.com}{}
+
+\divider
+\cvref{Mr.\ Sagar Palyekar}{Kaleyra, Now Tata Communications}{sagar.s.palyekar@gmail.com}{}
+
+
+
+\end{paracol}
+
+\end{document}
